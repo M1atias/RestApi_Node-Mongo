@@ -1,17 +1,19 @@
 {
   "name": "restapi_node-mongo",
   "version": "1.0.0",
-  "description": "",
+  "description": "restApi de autenticacion y autorizacion",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec npx babel-node src/index.js"
+    "build":"babel src --out-dir build",
+    "dev": "nodemon --exec npx babel-node src/index.js",
+    "start":"node build/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/M1atias/RestApi_Node-Mongo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "maty",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/M1atias/RestApi_Node-Mongo/issues"
